@@ -42,6 +42,10 @@ class MusicWidget : AppWidgetProvider() {
                 R.id.btn_play_pause,
                 if (isPlaying) R.drawable.ic_pause else R.drawable.ic_play
             )
+            views.setImageViewResource(
+                R.id.visualizer,
+                if (isPlaying) R.drawable.ic_visualizer_active else R.drawable.ic_visualizer_idle
+            )
             views.setOnClickPendingIntent(R.id.btn_prev,      pendingIntent(context, ACTION_PREV))
             views.setOnClickPendingIntent(R.id.btn_play_pause, pendingIntent(context, ACTION_PLAY_PAUSE))
             views.setOnClickPendingIntent(R.id.btn_next,      pendingIntent(context, ACTION_NEXT))
