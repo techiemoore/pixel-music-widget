@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Two vertical bars, each 2px wide × 5px tall.
+  Bar 1: x=6-10, Bar 2: x=14-18. Both y=7-17.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#A5A5A5"
+        android:pathData="M 6,7 L 10,7 L 10,17 L 6,17 Z
+                          M 14,7 L 18,7 L 18,17 L 14,17 Z"/>
+</vector>

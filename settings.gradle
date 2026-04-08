@@ -1,0 +1,2 @@
+rootProject.name = "PixelMusicWidget"
+include ':app'

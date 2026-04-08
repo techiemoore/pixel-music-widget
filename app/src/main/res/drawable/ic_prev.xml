@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  |◀  skip-previous:
+  Vertical bar 1px wide at x=4-6, y=5-19.
+  Left-pointing triangle (7 rows): right edge flat at x=18, left staircase tip at x=10 (centre row).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- vertical bar -->
+    <path
+        android:fillColor="#A5A5A5"
+        android:pathData="M 4,5 L 6,5 L 6,19 L 4,19 Z"/>
+    <!-- left-pointing triangle -->
+    <path
+        android:fillColor="#A5A5A5"
+        android:pathData="
+            M 16,5  L 18,5
+            L 18,19
+            L 16,19 L 16,17
+            L 14,17 L 14,15
+            L 12,15 L 12,13
+            L 10,13 L 10,11
+            L 12,11 L 12,9
+            L 14,9  L 14,7
+            L 16,7 Z"/>
+</vector>

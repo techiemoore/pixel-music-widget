@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pixel art play triangle scaled for 108dp adaptive icon foreground -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#A5A5A5"
+        android:pathData="
+            M 7,2  L 9,2
+            L 9,4  L 11,4
+            L 11,6 L 13,6
+            L 13,8 L 15,8
+            L 15,10 L 17,10
+            L 17,14
+            L 15,14 L 15,16
+            L 13,16 L 13,18
+            L 11,18 L 11,20
+            L 9,20  L 9,22
+            L 7,22 Z"/>
+</vector>

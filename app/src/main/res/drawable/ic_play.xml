@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Right-pointing triangle, 10 rows × 2px each.
+  Left edge flat at x=7. Right edge staircase converges at x=17 (centre two rows).
+  Widths per row: 1,2,3,4,5,5,4,3,2,1 pixels.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#A5A5A5"
+        android:pathData="
+            M 7,2  L 9,2
+            L 9,4  L 11,4
+            L 11,6 L 13,6
+            L 13,8 L 15,8
+            L 15,10 L 17,10
+            L 17,14
+            L 15,14 L 15,16
+            L 13,16 L 13,18
+            L 11,18 L 11,20
+            L 9,20  L 9,22
+            L 7,22 Z"/>
+</vector>
