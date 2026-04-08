@@ -38,8 +38,6 @@ class MusicWidget : AppWidgetProvider() {
             isPlaying: Boolean
         ): RemoteViews {
             val views = RemoteViews(context.packageName, R.layout.widget_music)
-            views.setTextViewText(R.id.tv_title, title)
-            views.setTextViewText(R.id.tv_artist, artist)
             views.setImageViewResource(
                 R.id.btn_play_pause,
                 if (isPlaying) R.drawable.ic_pause else R.drawable.ic_play
