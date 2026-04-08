@@ -66,14 +66,18 @@ class MusicWidget : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
-        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        val views = buildViews(
-            context,
-            prefs.getString("title", "No Media") ?: "No Media",
-            prefs.getString("artist", "---") ?: "---",
-            prefs.getBoolean("playing", false)
-        )
-        for (id in appWidgetIds) appWidgetManager.updateAppWidget(id, views)
+        try {
+            val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            val views = buildViews(
+                context,
+                prefs.getString("title", "No Media") ?: "No Media",
+                prefs.getString("artist", "---") ?: "---",
+                prefs.getBoolean("playing", false)
+            )
+            for (id in appWidgetIds) appWidgetManager.updateAppWidget(id, views)
+        } catch (e: Exception) {
+            android.util.Log.e("PixelMusic", "onUpdate failed", e)
+        }
     }
 
     override fun onReceive(context: Context, intent: Intent) {
