@@ -4,17 +4,7 @@
     android:layout_height="match_parent"
     android:background="@null">
 
-    <ImageButton
-        android:id="@+id/btn_prev"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="44dp"
-        android:src="@drawable/ic_prev"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        android:contentDescription="Previous"/>
-
+    <!-- Play/pause anchored dead-center -->
     <ImageButton
         android:id="@+id/btn_play_pause"
         android:layout_width="32dp"
@@ -25,12 +15,27 @@
         android:scaleType="fitCenter"
         android:contentDescription="Play/Pause"/>
 
+    <!-- Prev sits to the left of play/pause -->
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/btn_play_pause"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_prev"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:contentDescription="Previous"/>
+
+    <!-- Next sits to the right of play/pause -->
     <ImageButton
         android:id="@+id/btn_next"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="44dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/btn_play_pause"
+        android:layout_marginStart="16dp"
         android:src="@drawable/ic_next"
         android:background="@null"
         android:scaleType="fitCenter"
