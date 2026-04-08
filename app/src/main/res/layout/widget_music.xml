@@ -4,49 +4,34 @@
     android:layout_height="match_parent"
     android:background="@null">
 
-    <!-- Bar visualizer — swapped active/idle based on play state -->
-    <ImageView
-        android:id="@+id/visualizer"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/ic_visualizer_idle"
-        android:scaleType="fitXY"
-        android:contentDescription="@null"/>
-
-    <!-- Play/pause centered horizontally, below visualizer -->
     <ImageButton
         android:id="@+id/btn_play_pause"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/visualizer"
-        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/ic_play"
         android:background="@null"
         android:scaleType="fitCenter"
         android:contentDescription="Play/Pause"/>
 
-    <!-- Prev anchored to the left of play/pause -->
     <ImageButton
         android:id="@+id/btn_prev"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_centerVertical="true"
         android:layout_toStartOf="@id/btn_play_pause"
-        android:layout_alignTop="@id/btn_play_pause"
         android:layout_marginEnd="28dp"
         android:src="@drawable/ic_prev"
         android:background="@null"
         android:scaleType="fitCenter"
         android:contentDescription="Previous"/>
 
-    <!-- Next anchored to the right of play/pause -->
     <ImageButton
         android:id="@+id/btn_next"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_centerVertical="true"
         android:layout_toEndOf="@id/btn_play_pause"
-        android:layout_alignTop="@id/btn_play_pause"
         android:layout_marginStart="28dp"
         android:src="@drawable/ic_next"
         android:background="@null"
